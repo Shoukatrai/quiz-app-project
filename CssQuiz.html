@@ -22,10 +22,10 @@
             </div>
           </nav>
     </header>
-    <div class="quiz-container">
+    <div class="quiz-container" id="quizContainer">
         <div class="header">
             <p id="questionNbr">Question 1 /20</p>
-            <div class="timer">00:00</div>
+            <div class="timer" id="timer">00:00</div>
         </div>
         <div class="question">
             <h1 id="questionContainer"></h1>
@@ -39,10 +39,17 @@
             </ul>
         </div>
         <div class="footer">
-
-
-    <button onclick="nextQuestion()">Next</button>
+            <span style="margin-top: 10px;">CSS</span>
+            <button onclick="nextQuestion()" id="nextBtn">Next</button>
         </div>
+    </div>
+
+
+    <div id="resultPage" class="quiz-container">
+        <h1>Correct Answer: <span id="crtAns"></span></h1>
+        <h1>Wrong Answer <span id="wrngAns"></span></h1>
+        <h1>Total Question: <span id="totalQues"></span></h1>
+        <h1>Percentage: <span id="percent"></span></h1>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

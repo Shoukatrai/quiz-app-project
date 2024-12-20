@@ -23,7 +23,9 @@ body{
     padding: 10px;
     color: rgba(0, 0, 0, 0.609);
 } 
-
+#resultPage{
+    display: none;
+}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -31,6 +33,11 @@ body{
 
 .footer span{
     margin-left: 20px;
+}
+.footer button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
 }
 .question{
     margin-bottom: 20px;
